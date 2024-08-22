@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../button";
+import { SearchBar } from "../search/search";
 
 export const TopImage: React.FC = () => {
   return (
@@ -8,24 +9,7 @@ export const TopImage: React.FC = () => {
         دنبال یاد گرفتن چی با کی هستی؟
       </h1>
       <div className="bg-white opacity-100 h-28 w-[950px] rounded-2xl flex justify-center items-center">
-        <input
-          type="text"
-          className="block p-2 pl-10 w-70 text-neutral_content rounded-lg focus:pl-3"
-          placeholder="Search Here..."
-        />
-        <input
-          type="text"
-          className="block p-2 pl-10 w-70 text-neutral_content rounded-lg focus:pl-3"
-          placeholder="Search Here..."
-        />
-        <Button
-          type="button"
-          variant="primary"
-          size="large"
-          className=" bg-primary text-white rounded-2xl w-[192px] h-[45px]"
-        >
-          جستجو
-        </Button>
+        <SearchBar />
       </div>
     </div>
   );
