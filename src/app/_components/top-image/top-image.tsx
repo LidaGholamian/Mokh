@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { Button } from "../button";
-import { SearchBar } from "../search/search";
+import { SearchBar } from "../search";
 
 export const TopImage: React.FC = () => {
   return (
