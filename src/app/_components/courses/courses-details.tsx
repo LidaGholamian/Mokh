@@ -10,7 +10,7 @@ export const CourseDetails: React.FC<TopicsType> = ({
   price,
 }) => {
   return (
-    <div className="card">
+    <div className="card shadow-2xl rounded-b-xl">
       <figure className="bg-secondary rounded-t-xl">
         <Image
           src={image}
@@ -22,8 +22,8 @@ export const CourseDetails: React.FC<TopicsType> = ({
           className="rounded-t-xl opacity-65"
         />
       </figure>
-      <div className="flex justify-center items-start bg-white relative">
-        <div className="card-body bg-white rounded-b-xl flex flex-col justify-center items-center ">
+      <div className="flex justify-center items-start bg-white relative rounded-b-xl">
+        <div className="card-body bg-white  flex flex-col justify-center items-center">
           <Link href="/" className="text-sm items-center  pt-4 pb-2 font-bold">
             {title}
           </Link>

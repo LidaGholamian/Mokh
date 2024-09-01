@@ -5,7 +5,7 @@ import Link from "next/link";
 export const TopicPostCard: React.FC<TopicsType> = ({ title, image }) => {
   return (
     <>
-      <div className="card">
+      <div className="card shadow-2xl rounded-b-xl">
         <figure className="bg-secondary rounded-t-xl">
           <Image
             src={image}

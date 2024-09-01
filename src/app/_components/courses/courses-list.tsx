@@ -31,7 +31,7 @@ const courses: TopicsType[] = [
 export const CoursesList: React.FC = () => {
   return (
     <>
-      <div className=" grid grid-cols-3 gap-10 mt-20">
+      <div className=" grid grid-cols-3 gap-10 mt-20 mb-20 rounded-xl">
         {courses.map((course) => (
           <CourseDetails
             key={course.id}

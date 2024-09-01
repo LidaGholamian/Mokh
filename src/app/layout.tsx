@@ -59,7 +59,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen grid grid-rows-[100px_1fr_auto] container">
         <Header />
-        <main>{children}</main>
+        <main className="container">{children}</main>
         <Footer />
       </body>
     </html>
