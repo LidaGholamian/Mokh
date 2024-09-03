@@ -4,7 +4,7 @@ import { Button } from "../button";
 
 export const Header: React.FC = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-white container">
       <div className="container flex items-center justify-between mt-8 mb-8 pr-20 pl-20">
         <Image src="/image/BG.png" width={60} height={54} alt="mokh" />
         <TopNavigation />

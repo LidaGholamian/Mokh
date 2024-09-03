@@ -76,8 +76,8 @@ export const Slider: React.FC = () => {
 
   return (
     <>
-      <div className="container bg-secondary-bg w-full relative">
-        <div className="mr-20 flex mt-5 mb-14 gap-5">
+      <div className="container w-full relative  ">
+        <div className="mr-40 flex mt-20 mb-14 gap-5">
           <div className="w-[20%] flex flex-col gap-3">
             <h3 className="text-lg">برترین مدرسین</h3>
             <p className="text-sm">

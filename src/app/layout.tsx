@@ -53,11 +53,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      dir="rtl"
-      className={`dark ${vazirmathn.variable} ${figtree.variable}`}
-    >
-      <body className="min-h-screen grid grid-rows-[100px_1fr_auto] container">
+    <html dir="rtl" className={`${vazirmathn.variable} ${figtree.variable}`}>
+      <body className="min-h-screen grid grid-rows-[100px_1fr_auto]">
         <Header />
         <main className="container">{children}</main>
         <Footer />

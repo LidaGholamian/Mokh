@@ -6,7 +6,7 @@ export const TopImage: React.FC = () => {
       <h1 className="text-3xl text-white/80 align-text-bottom ">
         دنبال یاد گرفتن چی با کی هستی؟
       </h1>
-      <div className="bg-white opacity-100 h-28 w-[950px] rounded-2xl flex justify-center items-center ">
+      <div className="bg-white z-10 h-28 w-[950px] rounded-2xl flex justify-center items-center ">
         <SearchBar />
       </div>
     </div>

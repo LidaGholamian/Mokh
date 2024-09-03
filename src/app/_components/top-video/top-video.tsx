@@ -1,3 +1,34 @@
-export const TopVideos: React.FC = () => {
-  return <h1 className="text-5xl mt-10">برترین ویدئوهای آموزشی</h1>;
+import Image from "next/image";
+import { TopicsType } from "../types/topics.type";
+import Link from "next/link";
+
+export const TopVideosCard: React.FC<TopicsType> = ({ title, desc, image }) => {
+  return (
+    <div className="card shadow-xl rounded-b-xl">
+      <figure className="bg-secondary rounded-t-xl">
+        <Image
+          src={image}
+          title="title"
+          id="id"
+          width={460}
+          height={259}
+          alt="topics"
+          className="rounded-t-xl opacity-65"
+        />
+      </figure>
+      <div className="flex justify-center items-start bg-white relative rounded-b-xl mb-5">
+        <div className="card-body bg-white  flex flex-col justify-center items-center">
+          <Link href="/" className="text-sm items-center  pt-4 pb-2 font-bold">
+            {title}
+          </Link>
+          <div className="flex flex-col justify-center items-center text-sm gap-4">
+            <p>{desc}</p>
+            <button className="text-primary text-sm items-center font-bold">
+              &lt; مشاهده ویدئوها
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
