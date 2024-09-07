@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const TopVideosCard: React.FC<TopicsType> = ({ title, desc, image }) => {
   return (
-    <div className="card shadow-xl rounded-b-xl">
+    <div className="shadow-2xl rounded-b-xl md:w-72 w-[285px] mt-10 mr-auto ml-auto">
       <figure className="bg-secondary rounded-t-xl">
         <Image
           src={image}

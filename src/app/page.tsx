@@ -11,12 +11,12 @@ export default function Home() {
     <>
       <section className="mt-8 bg-neutral flex flex-col relative container">
         <HomeHeroSection />
-        <div className="flex flex-col justify-center items-center w-[950px] mr-auto ml-auto">
+        <div className="flex flex-col justify-center items-center mr-auto ml-auto w-[950px]">
           <TopImage />
           <TopicsPostCardList />
           <CoursesList />
         </div>
-        <div className="bg-white flex flex-col justify-center items-center mr-auto ml-auto mt-10 w-full">
+        <div className="bg-white flex flex-col justify-center items-center mr-auto ml-auto w-full">
           <TopVideoList />
         </div>
         <div className="bg-neutral mr-auto ml-auto mb-40">

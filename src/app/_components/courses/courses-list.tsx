@@ -31,7 +31,7 @@ const courses: TopicsType[] = [
 export const CoursesList: React.FC = () => {
   return (
     <>
-      <div className=" grid grid-cols-3 gap-10 mt-20 mb-20 rounded-xl">
+      <div className="flex flex-wrap gap-5 mt-10 container mb-20 rounded-xl">
         {courses.map((course) => (
           <CourseDetails
             key={course.id}
@@ -44,6 +44,19 @@ export const CoursesList: React.FC = () => {
           />
         ))}
       </div>
+      {/* <div className=" grid grid-cols-3 gap-10 mt-20 mb-20 rounded-xl">
+        {courses.map((course) => (
+          <CourseDetails
+            key={course.id}
+            id={course.id}
+            title={course.title}
+            image={course.image}
+            desc={course.desc}
+            price={course.price}
+            discount={course.discount}
+          />
+        ))}
+      </div> */}
     </>
   );
 };

@@ -76,44 +76,46 @@ export const Slider: React.FC = () => {
 
   return (
     <>
-      <div className="container w-full relative  ">
-        <div className="mr-40 flex mt-20 mb-14 gap-5">
-          <div className="w-[20%] flex flex-col gap-3">
-            <h3 className="text-lg">برترین مدرسین</h3>
-            <p className="text-sm">
-              رتبه مدرسین براساس امتیازی است که فراگیران بعد از هر جلسه به کلاس
-              خود می‌دهند (مثلا)
-            </p>
-            <div className="flex gap-3">
-              <button
-                className="text-white text-xl items-center bg-primary w-8 h-8 rounded-lg"
-                onClick={slideLeft}
-              >
-                &lt;
-              </button>
-              <button
-                className="text-white text-xl items-center bg-neutral-shadow w-8 h-8 rounded-lg"
-                onClick={slideRight}
-              >
-                &gt;
-              </button>
+      <div className="w-full pr-[50px]">
+        <div className="container w-[950px] md:w-[1200px] md:pr-28 relative">
+          <div className="pr-4 flex mt-20 mb-14 gap-5 w-full">
+            <div className="w-[20%] flex flex-col gap-3">
+              <h3 className="text-lg">برترین مدرسین</h3>
+              <p className="text-sm">
+                رتبه مدرسین براساس امتیازی است که فراگیران بعد از هر جلسه به
+                کلاس خود می‌دهند (مثلا)
+              </p>
+              <div className="flex gap-3">
+                <button
+                  className="text-white text-xl items-center bg-primary w-8 h-8 rounded-lg"
+                  onClick={slideLeft}
+                >
+                  &lt;
+                </button>
+                <button
+                  className="text-white text-xl items-center bg-neutral-shadow w-8 h-8 rounded-lg"
+                  onClick={slideRight}
+                >
+                  &gt;
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="w-[80%]">
-            <div
-              className="flex gap-5 justify-start items-center overflow-hidden rounded-lg "
-              id="slider"
-            >
-              {cards.map((card) => (
-                <SliderDetails
-                  key={card.id}
-                  id={card.id}
-                  title={card.title}
-                  image={card.image}
-                  rate={card.rate}
-                  desc={card.desc}
-                />
-              ))}
+            <div className="w-[80%]">
+              <div
+                className="flex gap-5 justify-start items-center overflow-hidden rounded-lg "
+                id="slider"
+              >
+                {cards.map((card) => (
+                  <SliderDetails
+                    key={card.id}
+                    id={card.id}
+                    title={card.title}
+                    image={card.image}
+                    rate={card.rate}
+                    desc={card.desc}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

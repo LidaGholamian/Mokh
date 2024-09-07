@@ -42,31 +42,34 @@ const cards: TopicsType[] = [
 
 export const TopVideoList: React.FC = () => {
   return (
-    <div className=" grid grid-cols-3 gap-10 mt-10 mb-10 w-[950px]">
-      {cards.map((card) => (
-        <TopVideosCard
-          key={card.id}
-          title={card.title}
-          image={card.image}
-          desc={card.desc}
-          id={card.id}
-        />
-      ))}
-      <div className="flex flex-col justify-center items-center gap-3">
-        <h1 className="text-5xl font-bold text-secondary border-b-primary border-b-4">
-          +218{" "}
-        </h1>
-        <h2 className="text-secondary text-lg">ویدئو با موضوعات مختلف</h2>
-        <Button
-          type="button"
-          variant="primary"
-          size="large"
-          className=" bg-primary text-white p-3 rounded-xl items-center flex justify-center gap-2"
-        >
-          <span className="text-lg">&lt;</span>
-          <span>مشاهده تمام ویدئـــوها</span>
-        </Button>
+    <>
+      <h2 className="text-2xl font-bold mt-10">برترین ویدئـوهای آموزشی</h2>
+      <div className="flex flex-wrap gap-5 mb-14 container w-[950px]">
+        {cards.map((card) => (
+          <TopVideosCard
+            key={card.id}
+            title={card.title}
+            image={card.image}
+            desc={card.desc}
+            id={card.id}
+          />
+        ))}
+        <div className="flex flex-col justify-center items-center gap-3 md:w-72 w-[310px]">
+          <h1 className="text-5xl font-bold text-secondary border-b-primary border-b-4">
+            +218{" "}
+          </h1>
+          <h2 className="text-secondary text-lg">ویدئو با موضوعات مختلف</h2>
+          <Button
+            type="button"
+            variant="primary"
+            size="large"
+            className=" bg-primary text-white p-3 rounded-xl items-center flex justify-center gap-2"
+          >
+            <span className="text-lg">&lt;</span>
+            <span>مشاهده تمام ویدئـــوها</span>
+          </Button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };

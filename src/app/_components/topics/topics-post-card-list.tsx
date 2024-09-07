@@ -37,7 +37,7 @@ const posts: TopicsType[] = [
 export const TopicsPostCardList: React.FC = () => {
   return (
     <>
-      <div className=" grid grid-cols-3 gap-10 mt-10">
+      <div className="flex flex-wrap gap-5 mt-10 container">
         {posts.map((post) => (
           <TopicPostCard
             key={post.id}
@@ -47,6 +47,16 @@ export const TopicsPostCardList: React.FC = () => {
           />
         ))}
       </div>
+      {/* <div className=" grid grid-cols-3 gap-10 mt-10">
+        {posts.map((post) => (
+          <TopicPostCard
+            key={post.id}
+            id={post.id}
+            title={post.title}
+            image={post.image}
+          />
+        ))}
+      </div> */}
     </>
   );
 };
