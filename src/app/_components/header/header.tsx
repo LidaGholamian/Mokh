@@ -8,11 +8,11 @@ export const Header: React.FC = () => {
       <div className="container flex items-center justify-between mt-8 mb-8 pr-20 pl-20">
         <Image
           src="/image/BG.png"
-          width="0"
-          height="0"
+          width={60}
+          height={54}
           alt="mokh"
           priority
-          className="w-auto h-auto"
+          className="w-auto h-[100%]"
         />
         <TopNavigation />
         <span className="mr-auto">

@@ -35,10 +35,12 @@ export const CourseDetails: React.FC<TopicsType> = ({
             <p className="text-primary font-bold">{discount} تومان</p>
           </div>
         </div>
-        <img
+        <Image
           src="/image/AD.png"
+          width={34}
+          height={31}
           alt="AD"
-          className=" absolute top-4 left-3 w-8 h-8"
+          className=" absolute top-4 left-3 w-[34px] h-[31px]"
         />
       </div>
     </div>

@@ -53,7 +53,7 @@ export const DropDown: React.FC = () => {
                 {open && (
                   <div className="duration-1000 w-[700px] h-[325px] text-neutral-base  absolute top-2 right-36 bg-white z-10 flex flex-col flex-wrap gap-4">
                     {SubMenu.map((item, i) => (
-                      <div>
+                      <div key={i}>
                         <ul className="flex justify-between items-center w-[160px]">
                           <li className="w-full h-[30px] hover:text-neutral_content pr-4 duration-500">
                             {item.title}
