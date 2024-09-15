@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
           height="0"
           alt="mokh"
           priority
-          className="w-[60px] h-auto"
+          className="w-auto h-auto"
         />
         <TopNavigation />
         <span className="mr-auto">

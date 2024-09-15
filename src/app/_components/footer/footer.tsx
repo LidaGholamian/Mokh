@@ -72,16 +72,40 @@ export const Footer: React.FC = () => {
           <div className="w-1/2">
             <ul className="flex justify-between items-center pr-40">
               <li>
-                <img src="/image/senf.png" />
+                <Image
+                  src="/image/senf.png"
+                  width={60}
+                  height={54}
+                  alt="senf"
+                  className="w-[60px] h-[54px]"
+                />
               </li>
               <li>
-                <img src="/image/enamad.png" />
+                <Image
+                  src="/image/enamad.png"
+                  width={60}
+                  height={54}
+                  alt="enamad"
+                  className="w-[60px] h-[54px]"
+                />
               </li>
               <li>
-                <img src="/image/Samandehi.png" />
+                <Image
+                  src="/image/Samandehi.png"
+                  width={60}
+                  height={54}
+                  alt="Samandehi"
+                  className="w-[60px] h-[54px]"
+                />
               </li>
               <li>
-                <img src="/image/namad.png" />
+                <Image
+                  src="/image/namad.png"
+                  width={60}
+                  height={54}
+                  alt="namad"
+                  className="w-[60px] h-[54px]"
+                />
               </li>
             </ul>
           </div>
