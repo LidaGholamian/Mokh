@@ -26,7 +26,7 @@ export const DropDown: React.FC = () => {
     <div className="relative flex flex-col items-center w-[130px]">
       <button
         onClick={handleClick}
-        className="p-4 w-full flex items-center justify-between font-bold tracking-wider text-secondary"
+        className="p-4 w-full flex items-center justify-between font-bold tracking-wider text-secondary overscroll-y-none"
       >
         موضوعات
         {!isOpen ? (
@@ -36,7 +36,7 @@ export const DropDown: React.FC = () => {
         )}
       </button>
       {isOpen && (
-        <div className="absolute z-10 bg-white top-[90px] flex flex-col items-start p-2 gap-2 w-[150px]">
+        <div className="absolute z-10 bg-white top-[90px] flex flex-col items-start p-2 gap-2 w-[150px] ">
           {Menu.map((item, i) => (
             <div
               key={i}

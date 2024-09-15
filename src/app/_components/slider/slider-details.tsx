@@ -19,7 +19,7 @@ export const SliderDetails: React.FC<SliderType> = ({
             width={200}
             height={150}
             alt="modares-1"
-            className="rounded-full w-[150px] h-[150px] mt-5 mb-16 mr-auto ml-auto shadow-xl "
+            className="rounded-full w-auto h-auto mt-5 mb-16 mr-auto ml-auto shadow-xl "
           />
         </figure>
         <h3 className="text-secondary-content font-bold text-lg">{title}</h3>

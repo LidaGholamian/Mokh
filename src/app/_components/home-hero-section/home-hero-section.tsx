@@ -10,6 +10,7 @@ export const HomeHeroSection: React.FC = () => {
           height={902}
           alt="surface"
           className="opacity-20 container"
+          priority
         />
       </div>
     </>

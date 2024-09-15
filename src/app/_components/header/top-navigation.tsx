@@ -25,7 +25,7 @@ export const TopNavigation: React.FC = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center mr-24">
+      <div className="flex justify-center items-center mr-12">
         <DropDown />
         <ul className="flex gap-x-8 mr-4">
           {menuItems.map((item) => {
