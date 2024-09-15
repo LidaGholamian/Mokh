@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-between items-center mt-20 mb-12 gap-10">
+        <div className="flex justify-between items-center mt-20 mb-12 container pr-40 pl-40">
           <div className="w-1/2">
             <ul className="flex justify-between items-center gap-10">
               <li>
