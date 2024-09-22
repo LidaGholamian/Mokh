@@ -24,7 +24,6 @@ export const DropDown: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
-  const [lock, setLock] = useState(false);
 
   function handleClick() {
     setIsOpen((prev) => !prev);
@@ -57,7 +56,7 @@ export const DropDown: React.FC = () => {
         {/* {isLocke ? "UnLock" : "Lock"} */}
       </button>
       {isOpen && (
-        <div className="absolute z-20 bg-white top-[60px] flex flex-col items-start pt-[20px] pb-[8px] gap-2 w-[150px] ">
+        <div className="absolute z-20 bg-white top-[60px] flex flex-col items-start pt-[23px] pb-[8px] gap-2 w-[150px] ">
           {Menu.map((item, i) => (
             <div
               onMouseEnter={handleOpen}
@@ -70,7 +69,7 @@ export const DropDown: React.FC = () => {
                   {item.title}
                 </li>
                 {open && (
-                  <div className="duration-1000 w-[700px] h-[325px] text-neutral-base  absolute top-2 right-36 mt-[12px] bg-white z-10 flex flex-col flex-wrap gap-4">
+                  <div className="duration-1000 w-[700px] h-[325px] text-neutral-base absolute top-2 right-36 mt-[12px] pt-4 bg-white z-10 flex flex-col flex-wrap gap-4">
                     {SubMenu.map((item, i) => (
                       <div key={i}>
                         <ul className="flex justify-between items-center w-[160px]">
