@@ -9,7 +9,7 @@ import { TopicBottomList } from "./_components/topic-bottom";
 export default function Home() {
   return (
     <>
-      <section className="mt-8 bg-neutral flex flex-col relative container">
+      <section className="mt-8 bg-neutral flex flex-col relative container md:pt-[50px]">
         <HomeHeroSection />
         <div className="flex flex-col justify-center items-center mr-auto ml-auto w-[950px]">
           <TopImage />
