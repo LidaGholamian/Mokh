@@ -58,9 +58,9 @@ export const Footer: React.FC = () => {
               <li>
                 <Image
                   alt="gaj"
-                  width={54}
-                  height={60}
-                  className="w-[60px] h-[54px]"
+                  width={140}
+                  height={54}
+                  className="w-[140px] h-[54px]"
                   src="/image/gaj.svg"
                 />
               </li>
