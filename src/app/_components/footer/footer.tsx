@@ -67,27 +67,27 @@ export const Footer: React.FC = () => {
               <li>
                 <Image
                   alt="gajmarket"
-                  width={54}
-                  height={60}
-                  className="w-[60px] h-[54px]"
+                  width={160}
+                  height={40}
+                  className="w-[160px] h-[40px]"
                   src="/image/Gaj-Market-English.png"
                 />
               </li>
               <li>
                 <Image
                   alt="DrIQ"
-                  width={54}
-                  height={60}
-                  className="w-[60px] h-[54px]"
+                  width={146}
+                  height={40}
+                  className="w-[146px] h-[40px]"
                   src="/image/DrIQ.png"
                 />
               </li>
               <li>
                 <Image
                   alt="gajmaj"
-                  width={54}
-                  height={60}
-                  className="w-[60px] h-[54px]"
+                  width={115}
+                  height={40}
+                  className="w-[115px] h-[40px]"
                   src="/image/gajmaj.png"
                 />
               </li>
